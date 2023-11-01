@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simpleWeb</title>
+    <base href="https://en.wikipedia.org/wiki/" target="_blank" />
+  </head>
+  <body>
+    <h1>Welcome, this is simpleWeb</h1>
+    <h3>This is a simple website using only vanilla HTML.</h3>
+    <br />
+    <p>
+      I'm creating this website as basic training to reinforce my learning on
+      how to manipulate the HTML elements.
+    </p>
+    <p>
+      Let's start by referencing them alphabetically (based on their
+      <a href="https://www.w3schools.com/tags/">tag</a>).
+    </p>
+    <!-- This is a comment. -->
+    <br />
+    <h2>Hyperlinks</h2>
+    <p>
+      My favorite author is Isaac Asimov, you can find more info about him on
+      his Wikipedia page
+      <a href="https://en.wikipedia.org/wiki/Isaac_Asimov">here</a>.
+    </p>
+    <br />
+    <h2>Abbreviations</h2>
+    <p>
+      I think the <abbr title="European Union">EU</abbr> is an interesting
+      concept, a community for nations focused on the betterment of its
+      constituents.
+    </p>
+    <br />
+    <h2>Addresses</h2>
+    <p>This would probably be an article or some piece of text.</p>
+    <address>
+      Written by John Doe.<br />john@doe.com<br />Placeland,Placeissippi, USA
+    </address>
+    <br />
+    <h2>Areas</h2>
+    <p>
+      These ones are actually new to me, never seen (or noticed them) before!
+      <br />
+      This is some pretty cool stuff though, click on the colors or the
+      shield/coat of arms, each will redirect you somewhere.
+    </p>
+    <img
+      src="ahttps://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
+      alt="Mexican Flag_of_Mexico"
+      usemap="#mexflag"
+      width="600"
+      height="300"
+    />
+    <map name="mexflag">
+      <area
+        target="_blank"
+        alt="Coat of arms"
+        title="Coat of arms"
+        href="https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico"
+        coords="300,150,70"
+        shape="circle"
+      />
+      <area
+        target="_blank"
+        alt="Green"
+        title="Green"
+        href="https://encycolorpedia.com/006847"
+        coords="0,300,200,0"
+        shape="rect"
+      />
+      <area
+        target="_blank"
+        alt="White"
+        title="White"
+        href="https://encycolorpedia.com/ffffff"
+        coords="200,300,400,0"
+        shape="rect"
+      />
+      <area
+        target="_blank"
+        alt="Red"
+        title="Red"
+        href="https://encycolorpedia.com/CE1126"
+        coords="400,300,600,0"
+        shape="rect"
+      />
+    </map>
+    <p>
+      This works by mapping areas of the image, I placed 3 rectangles and 1
+      circle.
+    </p>
+    <p>
+      The flag is a 600x300 image, where the first rectangle is started on the
+      coords 0,300 (x,y of the top left) to the 200,0 (x,y of the bottom right).
+    </p>
+    <p>
+      The circle has to be placed at the start of the map element, so that it
+      loads above the white rectangle.<br />
+      It takes the coords for the singularity where it starts 300,150 (meaning
+      the middle of the image) and then the amount of pixels to expand (I put
+      70).
+    </p>
+    <br />
+    <h2>Articles & Aside Content</h2>
+    <article>
+      <h2>Divinity: Original Sin II</h2>
+      <p>
+        The Divinity II as it is often abbreviated, is a pretty interesting game
+        that merges a great story with fascinating gameplay. <br />
+        It introduces cool features by letting interact with the different
+        elements and lets you approach the story from different angles,
+        depending on your decisions.
+      </p>
+    </article>
+    <aside>
+      <h4>Bonus</h4>
+      <p>
+        This content would be "aside" content, which for practical purposes is
+        normally located elsewhere, as there is no CSS here to move stuff
+        around, I'll just place it here.
+      </p>
+    </aside>
+    <br />
+    <h2>Audios</h2>
+    <p>
+      I changed my Windows default sounds so that this duck plays instead.<br />
+      Credit: Pixabay
+    </p>
+    <audio controls>
+      <source
+        src="https://cdn.pixabay.com/audio/2022/03/10/audio_5adfa08633.mp3"
+        type="audio/mpeg"
+      />
+      Are you using an old browser?
+    </audio>
+    <br />
+    <h2>Bold Text</h2>
+    <p>This is <b>bold</b> text.</p>
+    <br />
+    <h2>Base</h2>
+    <p>
+      Base is an interesting yet somewhat useless element, you require a
+      somewhat specific context to use it properly with vanilla HTML
+    </p>
+    <p>
+      You'd require all relative links to go to the same place so that it is
+      useful, either that or an option to turn it off dynamically via scripts.
+    </p>
+    <p>
+      I'm mentioning it here since I found the element and I experimented with
+      it, only relative links work, a full link with HTTP protocol will not be
+      affected.
+    </p>
+    <br />
+    <h2>BDI</h2>
+    <p>
+      BDI is basically to separate elements from the surrounding text, it stands
+      for bi-directional isolation. This is for languages that go in another
+      direction.
+    </p>
+    <br />
+    <p>Without BDI</p>
+    <ul>
+      <li>Player John: 150 points</li>
+      <li>Player ظبية: 500 points</li>
+    </ul>
+
+    <p>With BDI</p>
+    <ul>
+      <li>Player John: 150 points</li>
+      <li>Player <bdi>ظبية</bdi>: 100 points</li>
+    </ul>
+    <p>
+      This basically isolates whatever you put inside, so that the text
+      direction does not get all messed up.
+    </p>
+    <p>You can also use &lt;bdo&gt; and that overrides the direction.</p>
+    <br>
+    <h2>Blockquotes</h2>
+    <p>Pretty much just quotes inside a block, they are indented by default.</p>
+    <blockquote>
+      Isaac Asimov was born in the Soviet Union to his great surprise. He moved
+      quickly to correct the situation. When his parents emigrated to the United
+      States, Isaac (three years old at the time) stowed away in their baggage.
+      He has been an American citizen since the age of eight.
+    </blockquote>
+    <br>
+    <h2>Buttons</h2>
+    <p>Amazing and helpful buttons to interact with the web. They can have several properties and actions too!</p>
+    <button type="button">Click Me</button>
+    <p>There are other types of buttons but they are mostly related to forms, however a special type of property is disabled, which well disables the button</p>
+    <button type="button" disabled>Disabled 😔</button>
+    <br>
+    <h2>Canvasses</h2>
+    <p>They let you draw stuff via scripting, to keep it as vanilla as possible with HTML here, I won't use any scripts :&#41;</p>
+    <br>
+    <h2>Caption & Tables</h2>
+    <p>This is basically the title for the table, it appears at the top.</p>
+    <table>
+        <caption>Users Scores</caption>
+        <tr>
+            <th>User</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>100pts</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>80pts</td>
+        </tr>
+    </table>
+    <p>Tables are somewhat annoying to do here, as you have to specify the tr th td and so and so, I don't reccomend doing tables by hand on HTML :c</p>
+    <br>
+    <h2>Code</h2>
+    <p>This is normal text.</p>
+    <code>This is text with the code tags</code>
+    <br>
+    <h2>Datalists</h2>
+    <p>These ones are pretty interesting, let's have a look.</p>
+    <form action="submit" method="get">
+        <label for="distro">Choose your favorite Linux distro:</label>
+        <input list="distros" name="distro" id="distro">
+        <datalist id="distros">
+            <option value="Ubuntu">
+            <option value="Debian">
+            <option value="Manjaro">
+            <option value="Mint">
+            <option value="i uSe aRcH bTw">
+        </datalist>
+    </form>
+    <p>The main difference between datalists and select elements is that select is closed to those options, whereas datalists suggest the options, but are open for new inputs.</p>
+    <br>
+    <h2>Del</h2>
+    <p>This is a normal text.</p>
+    <del>This is a del element. Basically strikethrough.</del>
+    <br>
+    <h2>Details</h2>
+    <p>This one is used more often. Creates a clickable element that displays more info.</p>
+    <details>
+        <summary>This is the summary</summary>
+        <p>This text is hidden by default, then visible upon clicking.</p>
+    </details>
+    <br>
+    <h2>DFN</h2>
+    <p>This is text that will be defined within the content, mostly semantic usage, for context.</p>
+    <p>27 member states mostly in Europe make up the <dfn>EU</dfn>, a supranational political and economic union. With an estimated population of about 448 million, the union has a total area of 4,233,255 km².</p>
+    <br>
+    <h2>Dialogs</h2>
+    <p>This is normal text.</p>
+    <dialog open>This is an open dialog.</dialog>
+    <dialog>This is a closed dialog.</dialog>
+    <br>
+    <h2>Description Lists</h2>
+    <dl>
+        <dt>Person</dt>
+        <dd>A human being recognized as an individual.</dd>
+        <dt>Animal</dt>
+        <dd>A living being.</dd>
+    </dl>
+    <br>
+    <h2>Emphasized Text</h2>
+    <p>This is normal text.</p>
+    <em>This is emphazised text.</em>
+    <p>This is normal text with an <em>emphasis</em>.</p>
+    <br>
+    <h2>Embeds</h2>
+    <embed type="text/html" src="https://imgflip.com/i/84iich" width="500" height="200">
+        <p>This is inserting a website within your website.</p>
+</body>
+</html>
