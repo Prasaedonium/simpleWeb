@@ -178,7 +178,7 @@
       direction does not get all messed up.
     </p>
     <p>You can also use &lt;bdo&gt; and that overrides the direction.</p>
-    <br>
+    <br />
     <h2>Blockquotes</h2>
     <p>Pretty much just quotes inside a block, they are indented by default.</p>
     <blockquote>
@@ -187,89 +187,544 @@
       States, Isaac (three years old at the time) stowed away in their baggage.
       He has been an American citizen since the age of eight.
     </blockquote>
-    <br>
+    <br />
     <h2>Buttons</h2>
-    <p>Amazing and helpful buttons to interact with the web. They can have several properties and actions too!</p>
+    <p>
+      Amazing and helpful buttons to interact with the web. They can have
+      several properties and actions too!
+    </p>
     <button type="button">Click Me</button>
-    <p>There are other types of buttons but they are mostly related to forms, however a special type of property is disabled, which well disables the button</p>
+    <p>
+      There are other types of buttons but they are mostly related to forms,
+      however a special type of property is disabled, which well disables the
+      button
+    </p>
     <button type="button" disabled>Disabled 😔</button>
-    <br>
+    <br />
     <h2>Canvasses</h2>
-    <p>They let you draw stuff via scripting, to keep it as vanilla as possible with HTML here, I won't use any scripts :&#41;</p>
-    <br>
+    <p>
+      They let you draw stuff via scripting, to keep it as vanilla as possible
+      with HTML here, I won't use any scripts :&#41;
+    </p>
+    <br />
     <h2>Caption & Tables</h2>
     <p>This is basically the title for the table, it appears at the top.</p>
     <table>
-        <caption>Users Scores</caption>
-        <tr>
-            <th>User</th>
-            <th>Score</th>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>100pts</td>
-        </tr>
-        <tr>
-            <td>Jane</td>
-            <td>80pts</td>
-        </tr>
+      <caption>
+        Users Scores
+      </caption>
+      <tr>
+        <th>User</th>
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>100pts</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>80pts</td>
+      </tr>
     </table>
-    <p>Tables are somewhat annoying to do here, as you have to specify the tr th td and so and so, I don't reccomend doing tables by hand on HTML :c</p>
-    <br>
+    <p>
+      Tables are somewhat annoying to do here, as you have to specify the tr th
+      td and so and so, I don't reccomend doing tables by hand on HTML :c
+    </p>
+    <br />
     <h2>Code</h2>
     <p>This is normal text.</p>
     <code>This is text with the code tags</code>
-    <br>
+    <br />
     <h2>Datalists</h2>
     <p>These ones are pretty interesting, let's have a look.</p>
     <form action="submit" method="get">
-        <label for="distro">Choose your favorite Linux distro:</label>
-        <input list="distros" name="distro" id="distro">
-        <datalist id="distros">
-            <option value="Ubuntu">
-            <option value="Debian">
-            <option value="Manjaro">
-            <option value="Mint">
-            <option value="i uSe aRcH bTw">
-        </datalist>
+      <label for="distro">Choose your favorite Linux distro:</label>
+      <input list="distros" name="distro" id="distro" />
+      <datalist id="distros">
+        <option value="Ubuntu"></option>
+        <option value="Debian"></option>
+        <option value="Manjaro"></option>
+        <option value="Mint"></option>
+        <option value="i uSe aRcH bTw"></option>
+      </datalist>
     </form>
-    <p>The main difference between datalists and select elements is that select is closed to those options, whereas datalists suggest the options, but are open for new inputs.</p>
-    <br>
+    <p>
+      The main difference between datalists and select elements is that select
+      is closed to those options, whereas datalists suggest the options, but are
+      open for new inputs.
+    </p>
+    <br />
     <h2>Del</h2>
     <p>This is a normal text.</p>
     <del>This is a del element. Basically strikethrough.</del>
-    <br>
+    <br />
     <h2>Details</h2>
-    <p>This one is used more often. Creates a clickable element that displays more info.</p>
+    <p>
+      This one is used more often. Creates a clickable element that displays
+      more info.
+    </p>
     <details>
-        <summary>This is the summary</summary>
-        <p>This text is hidden by default, then visible upon clicking.</p>
+      <summary>This is the summary</summary>
+      <p>This text is hidden by default, then visible upon clicking.</p>
     </details>
-    <br>
+    <br />
     <h2>DFN</h2>
-    <p>This is text that will be defined within the content, mostly semantic usage, for context.</p>
-    <p>27 member states mostly in Europe make up the <dfn>EU</dfn>, a supranational political and economic union. With an estimated population of about 448 million, the union has a total area of 4,233,255 km².</p>
-    <br>
+    <p>
+      This is text that will be defined within the content, mostly semantic
+      usage, for context.
+    </p>
+    <p>
+      27 member states mostly in Europe make up the <dfn>EU</dfn>, a
+      supranational political and economic union. With an estimated population
+      of about 448 million, the union has a total area of 4,233,255 km².
+    </p>
+    <br />
     <h2>Dialogs</h2>
     <p>This is normal text.</p>
     <dialog open>This is an open dialog.</dialog>
     <dialog>This is a closed dialog.</dialog>
-    <br>
+    <br />
     <h2>Description Lists</h2>
     <dl>
-        <dt>Person</dt>
-        <dd>A human being recognized as an individual.</dd>
-        <dt>Animal</dt>
-        <dd>A living being.</dd>
+      <dt>Person</dt>
+      <dd>A human being recognized as an individual.</dd>
+      <dt>Animal</dt>
+      <dd>A living being.</dd>
     </dl>
-    <br>
+    <br />
     <h2>Emphasized Text</h2>
     <p>This is normal text.</p>
     <em>This is emphazised text.</em>
     <p>This is normal text with an <em>emphasis</em>.</p>
-    <br>
+    <br />
     <h2>Embeds</h2>
-    <embed type="text/html" src="https://imgflip.com/i/84iich" width="500" height="200">
-        <p>This is inserting a website within your website.</p>
-</body>
+    <embed
+      type="text/html"
+      src="https://imgflip.com/i/84iich"
+      width="400"
+      height="200"
+    />
+    <p>This is inserting a website within your website.</p>
+    <br />
+    <h2>Fieldsets</h2>
+    <form action="#">
+      <fieldset>
+        <legend>This is a fieldset</legend>
+        <label for="name">Your name:<input type="text" /></label><br />
+        <label for="email">Email:<input type="email" /></label><br />
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+    <br />
+    <h2>Figcaptions</h2>
+    <p>Basically a subtitle for your image.</p>
+    <img
+      src="https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_1280.jpg"
+      width="200"
+      height="100"
+      alt="Kitty with flower"
+    />
+    <figcaption>Credit: Pixabay.</figcaption>
+    <br />
+    <h2>Figures</h2>
+    <p>Isolated content. It also gets indentation by default.</p>
+    <figure>
+      <img
+        src="https://cdn.pixabay.com/photo/2016/11/18/13/15/animal-1834409_1280.jpg"
+        width="200"
+        height="100"
+        alt="Cat eyes closeup"
+      />
+      <br />
+      <caption>
+        Credit: Pixabay.
+      </caption>
+    </figure>
+    <br />
+    <h2>Horizontal Rules</h2>
+    <p>Below is a Horizontal Rule (hr)</p>
+    <hr />
+    <p>Above is a Horizontal Rule (hr)</p>
+    <br />
+    <h2>Italics</h2>
+    <p>This is normal text.</p>
+    <i>This is italics text.</i>
+    <p>This is normal text and this is <i>italics</i>.</p>
+    <h2>Inserted Text</h2>
+    <p>This is normal text.</p>
+    <p>
+      This is text, <del>this text has been deleted.</del>
+      <ins>But now there is inserted text!</ins>
+    </p>
+    <br />
+    <h2>Keyboard Inputs</h2>
+    <p>
+      This is basically keyboard inputs so they show up with differently
+      formatted style. Check them out here:
+    </p>
+    <p>
+      To open the network connections panel, please use <kbd>Win + R</kbd>, then
+      type ncpa.cpl and afterwards press <kbd>Enter</kbd>.
+    </p>
+    <br />
+    <h2>Marked Text</h2>
+    <p>This is normal text.</p>
+    <mark>This is marked text.</mark>
+    <p>This is normal text, with a <mark>marked or highlighted part.</mark></p>
+    <br />
+    <h2>Meter Elements</h2>
+    <p>This one was unexpected, it looks very interested, let's see it:</p>
+    <ul>
+      <li>
+        <h3>Installing Virus.exe...</h3>
+        <p>Progress: <meter value="85" min="0" max="100">85%</meter></p>
+      </li>
+      <li>
+        <h3>An error was encountered. Uninstalling Virus.exe...</h3>
+        <p>Progress: <meter value="100" min="0" max="100">100%</meter></p>
+        <p>Complete!</p>
+      </li>
+    </ul>
+    <p>
+      So this element shows a progress bar, you can modify the value and then
+      the threshold (min value and max value), it's pretty nice looking as well!
+    </p>
+    <br />
+    <h2>Navigation Elements</h2>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <p>Basically, navbars.</p>
+    <br />
+    <h2>Ordered Lists</h2>
+    <ol>
+      <li>Uno</li>
+      <li>Dos</li>
+      <li>Tres</li>
+      <li>Cuatro</li>
+      <li>Cinco</li>
+    </ol>
+    <p>You can also reverse them!</p>
+    <ol reversed>
+      <li>п’ять</li>
+      <li>чотири</li>
+      <li>три</li>
+      <li>два</li>
+      <li>один</li>
+    </ol>
+    <br />
+    <h2>Optgroups</h2>
+    <p>
+      These are for select elements, basically defines a grouped section of
+      values.
+    </p>
+    <form action="#">
+      <label for="dofus">Select your favorite Dofus: </label>
+      <select name="dofus" id="dofus">
+        <optgroup label="Original Dofus">
+          <option value="crimson">Crimson Dofus</option>
+          <option value="ebony">Ebony Dofus</option>
+          <option value="emerald">Emerald Dofus</option>
+          <option value="ivory">Ivory Dofus</option>
+          <option value="ochre">Ochre Dofus</option>
+          <option value="turquoise">Turquoise Dofus</option>
+        </optgroup>
+        <optgroup label="Real Dofus">
+          <option value="dolmanax">Dolmanax</option>
+          <option value="ice">Ice Dofus</option>
+          <option value="kaliptus">Kaliptus Dofus</option>
+          <option value="vulbis">Vulbis Dofus</option>
+        </optgroup>
+        <optgroup label="Fake Dofus">
+          <option value="abyssal">Abyssal Dofus</option>
+          <option value="cawwot">Cawwot Dofus</option>
+          <option value="cloudy">Cloudy Dofus</option>
+          <option value="dofawa">Dofawa</option>
+          <option value="dokoko">Dokoko</option>
+          <option value="dotrich">Dotrich</option>
+          <option value="grofus">Grofus</option>
+          <option value="watchers">Watchers Dofus</option>
+        </optgroup>
+      </select>
+    </form>
+    <br />
+    <h2>Outputs and OnInputs</h2>
+    <p>
+      This one also looks exciting! We get some flashy elements that do
+      interesting stuff.
+    </p>
+    <form action="#" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" id="a" value="50" min="0" max="200" />+
+      <input type="number" id="b" value="25" />=
+      <output name="x" for="a b"></output>
+    </form>
+    <p>
+      Here the range input is A, where the value is 50 and the range can be set
+      as well, I put min 0 and max 200
+    </p>
+    <p>
+      The number input is B, where the value is 25, defaults are any int, even
+      negatives. You can also set min and max.
+    </p>
+    <p>
+      X holds the value for the result, which is presented right next to the
+      number input. The input modifies X value on real time.
+    </p>
+    <p>
+      This is technically JavaScript, as it uses the onInput html tag, which
+      executes a JS script.
+    </p>
+    <br />
+    <h2>Params</h2>
+    <object
+      data="https://cdn.pixabay.com/audio/2023/10/06/audio_14f9198f0b.mp3"
+    >
+      <param name="autoplay" value="true" />
+    </object>
+    <p>
+      Now, this is supposed to autoplay, but it won't, unless your browser is
+      pretty outdated, autoplay was seen as an annoyance and browsers
+      implemented policies to prevent autoplaying.
+    </p>
+    <br />
+    <h2>Pictures</h2>
+    <p>
+      Basically, load something different depending on the min-width for the
+      window.
+    </p>
+    <picture>
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045_1280.jpg
+        "
+      />
+      <source
+        media="(min-width:665px)"
+        srcset="
+          https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg
+        "
+      />
+      <img
+        src="https://cdn.pixabay.com/photo/2016/11/21/14/47/kitten-1845789_1280.jpg"
+        alt="Felines"
+        style="width: auto"
+      />
+      <br />
+      <caption>
+        Credit: Pixabay.
+      </caption>
+    </picture>
+    <p>This element shows 3 pictures:</p>
+    <ol>
+      <li>
+        <em>Kitty: </em>A default picture is the viewport width is not meeting
+        the min threshold that I specified (665px)
+      </li>
+      <li><em>Cat: </em>If the viewport width is 665+px</li>
+      <li><em>Lion: </em>If the viewport width is 1280+px</li>
+    </ol>
+    <br />
+    <h2>Preformatted Text</h2>
+    <p>This is normal text.</p>
+    <pre>This is preformatted text</pre>
+    <br />
+    <h2>Ruby, RT, RP</h2>
+    <p>
+      East Asian typography and annotations, westerners like myself are pretty
+      much unacquainted with these.
+    </p>
+    <ruby> 漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp> </ruby>
+    <p>
+      Ruby indicates characters that require explanations or pronuncations. The
+      rt tag indicates such information, while rp shows a character for browsers
+      that do not support this type of typography.
+    </p>
+    <br />
+    <h2>S text</h2>
+    <p>
+      While the <kbd>&lt;del&gt;</kbd> tag is used to indicate text that has
+      been deleted, and looks like it has a strikethrough, the S tag basically
+      does the same! But, it's to indicate the text is no longer correct. As in,
+      it's not deleted, it's just no longer correct. Let's see.
+    </p>
+    <blockquote>
+      <p><s>Looking for my Dog Tony! He's an old, long-haired chihuahua</s></p>
+      <p>Nvm I've found him!</p>
+    </blockquote>
+    <br />
+    <h2>Sample text</h2>
+    <p>This is normal text.</p>
+    <samp>This is sample text.</samp>
+    <p>
+      This is very similar to kbd, pre, code, they are all used for semantic
+      purposes as far as I know.
+    </p>
+    <br />
+    <h2>Search</h2>
+    <p>The search element is for indicating there is a search area here.</p>
+    <search>
+      <form action="#">
+        <input type="text" placeholder="Search..." />
+      </form>
+    </search>
+    <br />
+    <h2>Small text, sup text and sub text</h2>
+    <p>This is normal text.</p>
+    <p>This is normal text and <small>This is smol text.</small></p>
+    <p>This is normal text and <sup>This is sup text.</sup></p>
+    <p>This is normal text and <sub>This is sup text.</sub></p>
+    <br />
+    <h2>SVG</h2>
+    <p>
+      I've played quite a lot with these ones, they are very interesting as they
+      are vectors that can scale, meaning no loss on quality at all and
+      possibility to edit certain parts of it like colors and line weight, etc.
+    </p>
+    <div>
+      <svg
+        width="100"
+        height="100"
+        viewBox="0 0 25 25"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M19.0006 9.03002C19.0007 8.10058 18.8158 7.18037 18.4565 6.32317C18.0972 5.46598 17.5709 4.68895 16.9081 4.03734C16.2453 3.38574 15.4594 2.87265 14.5962 2.52801C13.7331 2.18336 12.8099 2.01409 11.8806 2.03002C10.0966 2.08307 8.39798 2.80604 7.12302 4.05504C5.84807 5.30405 5.0903 6.98746 5.00059 8.77001C4.95795 9.9595 5.21931 11.1402 5.75999 12.2006C6.30067 13.2609 7.10281 14.1659 8.09058 14.83C8.36897 15.011 8.59791 15.2584 8.75678 15.5499C8.91565 15.8415 8.99945 16.168 9.00059 16.5V18.03H15.0006V16.5C15.0006 16.1689 15.0829 15.843 15.24 15.5515C15.3971 15.26 15.6241 15.0121 15.9006 14.83C16.8528 14.1911 17.6336 13.328 18.1741 12.3167C18.7147 11.3054 18.9985 10.1767 19.0006 9.03002V9.03002Z"
+            stroke="#000000"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            data-darkreader-inline-stroke=""
+            style="--darkreader-inline-stroke: #e8e6e3"
+          ></path>
+          <path
+            d="M15 21.04C14.1345 21.6891 13.0819 22.04 12 22.04C10.9181 22.04 9.86548 21.6891 9 21.04"
+            stroke="#000000"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            data-darkreader-inline-stroke=""
+            style="--darkreader-inline-stroke: #e8e6e3"
+          ></path>
+        </g>
+      </svg>
+      <svg
+        width="100"
+        height="100"
+        viewBox="0 0 25 25"
+        fill="red"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M19.0006 9.03002C19.0007 8.10058 18.8158 7.18037 18.4565 6.32317C18.0972 5.46598 17.5709 4.68895 16.9081 4.03734C16.2453 3.38574 15.4594 2.87265 14.5962 2.52801C13.7331 2.18336 12.8099 2.01409 11.8806 2.03002C10.0966 2.08307 8.39798 2.80604 7.12302 4.05504C5.84807 5.30405 5.0903 6.98746 5.00059 8.77001C4.95795 9.9595 5.21931 11.1402 5.75999 12.2006C6.30067 13.2609 7.10281 14.1659 8.09058 14.83C8.36897 15.011 8.59791 15.2584 8.75678 15.5499C8.91565 15.8415 8.99945 16.168 9.00059 16.5V18.03H15.0006V16.5C15.0006 16.1689 15.0829 15.843 15.24 15.5515C15.3971 15.26 15.6241 15.0121 15.9006 14.83C16.8528 14.1911 17.6336 13.328 18.1741 12.3167C18.7147 11.3054 18.9985 10.1767 19.0006 9.03002V9.03002Z"
+            stroke="#000000"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            data-darkreader-inline-stroke=""
+            style="--darkreader-inline-stroke: #e8e6e3"
+          ></path>
+          <path
+            d="M15 21.04C14.1345 21.6891 13.0819 22.04 12 22.04C10.9181 22.04 9.86548 21.6891 9 21.04"
+            stroke="#000000"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            data-darkreader-inline-stroke=""
+            style="--darkreader-inline-stroke: #e8e6e3"
+          ></path>
+        </g>
+      </svg>
+      <svg
+        width="100"
+        height="100"
+        viewBox="0 0 25 25"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M19.0006 9.03002C19.0007 8.10058 18.8158 7.18037 18.4565 6.32317C18.0972 5.46598 17.5709 4.68895 16.9081 4.03734C16.2453 3.38574 15.4594 2.87265 14.5962 2.52801C13.7331 2.18336 12.8099 2.01409 11.8806 2.03002C10.0966 2.08307 8.39798 2.80604 7.12302 4.05504C5.84807 5.30405 5.0903 6.98746 5.00059 8.77001C4.95795 9.9595 5.21931 11.1402 5.75999 12.2006C6.30067 13.2609 7.10281 14.1659 8.09058 14.83C8.36897 15.011 8.59791 15.2584 8.75678 15.5499C8.91565 15.8415 8.99945 16.168 9.00059 16.5V18.03H15.0006V16.5C15.0006 16.1689 15.0829 15.843 15.24 15.5515C15.3971 15.26 15.6241 15.0121 15.9006 14.83C16.8528 14.1911 17.6336 13.328 18.1741 12.3167C18.7147 11.3054 18.9985 10.1767 19.0006 9.03002V9.03002Z"
+            stroke="#a8e5ad"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            data-darkreader-inline-stroke=""
+            style="--darkreader-inline-stroke: #e8e6e3"
+          ></path>
+          <path
+            d="M15 21.04C14.1345 21.6891 13.0819 22.04 12 22.04C10.9181 22.04 9.86548 21.6891 9 21.04"
+            stroke="#a8e5ad"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            data-darkreader-inline-stroke=""
+            style="--darkreader-inline-stroke: #e8e6e3"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <p>
+      These are all the same SVG, I'm just using a red fill in the second and
+      green stroke color on the third.
+    </p>
+    <br />
+    <h2>Time</h2>
+    <p>
+      This is yet another semantic tag that helps machine readers or other types
+      of assisting technology. For practical purposes it doesn't change much for
+      regular users. But it's also helpful to get more accurate results if you
+      use the datatime attribute, as it can work together with other apps or
+      functions (like a calendar) to help you schedule a meeting or something.
+    </p>
+    <p>
+      Our business hours are from <time>09:00am</time> to <time>05:00pm</time>.
+    </p>
+    <p>
+      Our Annual Christmas Party will be
+      <time datetime="2023-12-20 18:00">tomorrow</time>, be sure to finish your
+      tasks by noon!
+    </p>
+    <p>
+      In these examples, there is a semantic time tag, in the second one, the
+      tomorrow would be somewhat vague, yet the datetime attributes date and
+      exact time for the event.
+    </p>
+    <br />
+    <hr />
+    <br />
+    <h2>The End</h2>
+    <p>
+      So that's pretty much it for the HTML tags, there are actually other ones
+      that I didn't cover, although they were either used in previous elements
+      or they are just not that relevant.
+    </p>
+  </body>
+  <footer>This is the footer!</footer>
 </html>
